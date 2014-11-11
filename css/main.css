@@ -188,7 +188,7 @@ nav .taglineHeader {
   float: left;
   margin-left: 26px;
   padding-left: 21px;
-  border-left: 1px solid #255E63;
+  border-left: 2px solid #17526e;
   font-size: 0.813em;
 }
 .nav {
@@ -233,16 +233,34 @@ nav .taglineHeader {
   background-size: cover;
 }
 .topHeader {
-  content: '';
   width: 100%;
-  height: 730px;
+  height: 710px;
+}
+#headerArticle1 {
+  display: block;
+  margin: 0 auto;
+  max-width: 630px;
+}
+#headerArticle1 h1,
+#headerArticle1 h2,
+#headerArticle1 p {
+  text-align: center;
+  color: white;
+  margin: 15px 0;
 }
 #headerArticle1 h1 {
-  color: white;
+  padding-top: 53%;
   font-size: 3.813em;
 }
-#headerArticle1 h1:first-child {
+#headerArticle1 h1 span {
+  text-align: right;
   font-weight: normal;
+}
+#headerArticle1 h2 {
+  font-size: 2.625em;
+}
+#headerArticle1 h2 span {
+  color: #088960;
 }
 /*--- content section - put whatever you want here ---*/
 /*--- content section - put whatever you want here ---*/
