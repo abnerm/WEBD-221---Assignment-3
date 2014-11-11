@@ -4,7 +4,7 @@
 
 // 960px grid
 @column-width: 115;
-@gutter-width: 0;
+@gutter-width: 20;
 @columns: 12;
 
 // Utility variable — you should never need to modify this
@@ -13,3 +13,21 @@
 // Set @total-width to 100% for a fluid layout
 //@total-width: @gridsystem-width;
 @total-width: 100%;
+
+/* for clearing any floats <br class=&quot;clearfloat&quot; /> */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* for vertical aligning anything */
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+} 
+ 

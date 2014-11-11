@@ -41,11 +41,6 @@ section {
     background-color: lightgreen;
 }
 
-nav {
-    width: 100%;
-    background-color: lightblue;
-}
-
 h1, h2, h3 {
     font-weight: 400;
     line-height: 1.25;
@@ -60,48 +55,98 @@ h2 {
 h3 {
     font-size: 1.6rem;
 }
- 
+
 /* container - place inside each section or around the entire page depending on your layout */
+.containerMain {
+    
+}
+
 .container {
-    .column(12);
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 100%;
 }
- 
-/* for clearing any floats <br class=&quot;clearfloat&quot; /> */
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
- 
-/*--- header section - put whatever you want here ---*/
-#header {
-}
- 
+
+
 /*--- horizontal &quot;block&quot; menu ---*/
 nav {
+    width: 100%;
+    height: 70px;
+
+    .logoContainer {
+        .column(7);
+        height: 100%;
+    }
     .logo {
+        .vertical-align; 
+
+        margin-left: 13.5%;
+        float: left;
         content:'';
         width: 103px;
         height: 41px;
-        background: url(../assets/logo.png) no-repeat center;
-        background-color: black; 
+        background: url(../assets/logo.png) no-repeat center; 
     }
+    .taglineHeader {
+        .vertical-align;
+        opacity: 0.3%;
+        color: white;
+        float: left;
+        margin-left: 26px;
+        padding-left: 21px;
+        border-left:  1px solid #255E63;
+        font-size: 0.813em;
+
+    }
+
 }
 .nav {
-    float: left;
-}
-.nav li {
-    display: inline-block;
-    float: left;
-}
-.nav li a {
-    display: block;
-    text-decoration: none;
-    height: 50px;
-    width: 125px;
-    padding: 5px 10px 5px 10px;
+    .column(5);
+    height: 100%;
+    ul {
+        height: 100%;
+        li {
+            height: 100%;
+            display: inline-block;
+            float: left;
+            &:hover {
+                border-top: 1px solid #0FCF8C
+            }
+        }
+        li a {
+            .vertical-align; 
+            display: block;
+            text-decoration: none;
+            font-size :0.813em;
+            color: #EEE;       
+            padding: 15px 20px;
+        }
+    }
 }
 
+/*--- header section ---*/
+.topHeader {
+    content:'';
+    width: 100%;
+    height: 733px;
+    
+    } 
+#bg-image {
+        content:'';
+        position: absolute;
+        z-index: -999;
+        width: 100%;
+        height: 733px;
+        background: url(../assets/banner_bg.jpg) no-repeat center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+header {
+
+    
+    
+
+}
  
 /*--- content section - put whatever you want here ---*/
 #content {
