@@ -148,7 +148,7 @@ h3 {
 }
 /* container - place inside each section or around the entire page depending on your layout */
 .container {
-  max-width: 1600px;
+  max-width: 1171px;
   margin: 0 auto;
   height: 100%;
 }
@@ -262,10 +262,179 @@ nav .taglineHeader {
 #headerArticle1 h2 span {
   color: #088960;
 }
+#lineHeart {
+  padding-bottom: 78px;
+}
+.heart-border {
+  opacity: 0.2;
+}
+.heart-border:before,
+.heart-border:after {
+  background-color: #B3B3B3;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 90px;
+}
+.heart-border:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.heart-border:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
 /*--- content section - put whatever you want here ---*/
+.Feature {
+  background-color: #f4f7f9;
+  content: "";
+  height: 450px;
+}
+.Feature header {
+  text-align: center;
+}
+.Feature header h1 {
+  text-align: center;
+  padding: 25px 78px ;
+  font-size: 1.750em;
+  color: #0eb493;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.Feature article {
+  display: inline;
+  float: left;
+  width: 32.09876543%;
+  margin: 0 0.61728395%;
+  height: 120px;
+}
+.Feature article > div {
+  height: 100%;
+  display: inline;
+  float: left;
+  width: 23.7654321%;
+  margin: 0 0.61728395%;
+}
+.Feature article div + div {
+  display: inline;
+  float: left;
+  width: 73.7654321%;
+  margin: 0 0.61728395%;
+  height: 100%;
+}
+.Feature article div + div h1 {
+  padding: 10px 0;
+  width: 100%;
+  font-size: 1.250em;
+  color: #062033;
+  font-weight: 600;
+}
+.Feature article div + div p {
+  padding: 10px 0;
+  width: 100%;
+  font-size: 0.813em;
+  color: #062033;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.Feature article img {
+  height: 50%;
+}
 /*--- content section - put whatever you want here ---*/
+.works {
+  background-color: lightblue;
+  content: "";
+  height: 953px;
+}
+.works header {
+  text-align: center;
+}
+.works header h1 {
+  text-align: center;
+  padding: 25px 78px ;
+  font-size: 1.750em;
+  color: #0eb493;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.works p {
+  text-align: center;
+  color: #062033;
+  opacity: 0.8;
+}
+.works ul {
+  display: block;
+  text-align: center;
+}
+.works ul li {
+  display: inline-block;
+}
+.works ul li a {
+  text-decoration: none;
+  padding: 11px 18px;
+  font-weight: 700;
+  font-size: 0.875em;
+  color: #062033;
+}
+.works ul li:hover {
+  background-color: #0eb493;
+}
 /*--- content section - put whatever you want here ---*/
+.team {
+  background-color: yellow;
+  content: "";
+  height: 926px;
+}
+.team header {
+  text-align: center;
+}
+.team header h1 {
+  text-align: center;
+  padding: 25px 78px ;
+  font-size: 1.750em;
+  color: #0eb493;
+  text-transform: uppercase;
+  font-weight: 800;
+}
 /*--- content section - put whatever you want here ---*/
+.funfacts {
+  background-color: grey;
+  content: "";
+  height: 600px;
+}
+.funfacts header {
+  text-align: center;
+}
+.funfacts header h1 {
+  text-align: center;
+  padding: 25px 78px ;
+  font-size: 1.750em;
+  color: #0eb493;
+  text-transform: uppercase;
+  font-weight: 800;
+}
 /*--- content section - put whatever you want here ---*/
-/*--- content section - put whatever you want here ---*/
+.LetsDiscuss {
+  background-color: pink;
+  content: "";
+  height: 855px;
+}
+.LetsDiscuss header {
+  text-align: center;
+}
+.LetsDiscuss header h1 {
+  text-align: center;
+  padding: 25px 78px ;
+  font-size: 1.750em;
+  color: #0eb493;
+  text-transform: uppercase;
+  font-weight: 800;
+}
 /*--- footer section - put whatever you want here ---*/
+footer {
+  background-color: lightblue;
+  content: "";
+  height: 404px;
+}
