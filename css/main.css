@@ -243,7 +243,7 @@ section .heart-border:after {
 /*--- content section - put whatever you want here ---*/
 #works {
   background-color: lightblue;
-  height: 953px;
+  height: 350px;
 }
 #works p {
   text-align: center;
@@ -251,10 +251,14 @@ section .heart-border:after {
   opacity: 0.8;
 }
 #works ul {
+  height: 30px;
   display: block;
   text-align: center;
+  padding-top: 50px;
 }
 #works ul li {
+  border-radius: 5px;
+  height: 100%;
   display: inline-block;
 }
 #works ul li a {
@@ -266,6 +270,15 @@ section .heart-border:after {
 }
 #works ul li:hover {
   background-color: #0eb493;
+}
+#workGallery {
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+}
+#workGallery ul {
+  margin: 0;
+  height: 100%;
 }
 /*--- content section - put whatever you want here ---*/
 #team {
