@@ -12,29 +12,7 @@ Author: Shawn Santiago
 @import "mixins.less";
 @import "fonts.less";
 
-/* reset styles */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-    margin: 0; padding: 0;  border: 0; outline: 0; font-size: 100%;
-    vertical-align: baseline; background: transparent;
-}
-body { line-height: 1; }
-ol, ul { list-style: none; }
-blockquote, q { quotes: none; }
-blockquote:before, blockquote:after, q:before, q:after { content: ''; }
-:focus { outline: 0; }
-ins { text-decoration: none; }
-del { text-decoration: line-through; }
-table { border-collapse: collapse; border-spacing: 0; }
- 
 /* Global Styles */ 
-
-body {
-    color:black;
-}
 
 section {
     width: 100%;
@@ -55,49 +33,18 @@ h3 {
     font-size: 1.6rem;
 }
 
-/* container - place inside each section or around the entire page depending on your layout */
-.containerMain {
-    
+ul {
+    list-style: none;
 }
+/* container - place inside each section or around the entire page depending on your layout */
 
 .container {
-    max-width: 1171px;
+    max-width: 90%;
     margin: 0 auto;
     height: 100%;
 }
-
-
 /*--- horizontal &quot;block&quot; menu ---*/
-nav {
-    width: 100%;
-    height: 70px;
 
-    .logoContainer {
-        .column(7);
-        height: 100%;
-    }
-    .logo {
-        .vertical-align; 
-        margin-left: 13.5%;
-        float: left;
-        content:'';
-        width: 103px;
-        height: 41px;
-        background: url(../assets/logo.png) no-repeat center; 
-    }
-    .taglineHeader {
-        .vertical-align;
-        opacity: 0.3;
-        color: white;
-        float: left;
-        margin-left: 26px;
-        padding-left: 21px;
-        border-left:  2px solid #17526e;
-        font-size: 0.813em;
-
-    }
-
-}
 .nav {
     .column(5);
     height: 100%;
@@ -108,7 +55,8 @@ nav {
             display: inline-block;
             float: left;
             &:hover {
-                border-top: 1px solid #0FCF8C
+                border-top: 1px solid #0FCF8C;
+                margin-top: -1px;
             }
         }
         li a {
@@ -123,27 +71,49 @@ nav {
 }
 
 /*--- header section ---*/
-#bg-image {
-        content:'';
-        position: absolute;
-        z-index: -999;
-        width: 100%;
-        height: 800px;
-        background: url(../assets/banner_bg.jpg) no-repeat center;
-        background-attachment: fixed;
-        background-size: cover;
-    }
 
-.topHeader {
+header#header {
     width: 100%;
     height: 710px;
+    background: url(../assets/banner_bg.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    nav {
+        width: 100%;
+        height: 70px;
 
-    
-} 
+        .logoContainer {
+            .column(7);
+            height: 100%;
+        }
+        .logo {
+            .vertical-align; 
+            margin-left: 13.5%;
+            float: left;
+            content:'';
+            width: 103px;
+            height: 41px;
+            background: url(../assets/logo.png) no-repeat center; 
+        }
+        .taglineHeader {
+            .vertical-align;
+            opacity: 0.3;
+            color: white;
+            float: left;
+            margin-left: 26px;
+            padding-left: 21px;
+            border-left:  2px solid #17526e;
+            font-size: 0.813em;
 
-#headerArticle1 { 
+        }
+
+    }
+}
+
+
+header #slider { 
     display: block;
-    margin: 0 auto;
+    margin: 40px auto;
     max-width: 630px;
     
     & h1,h2,p{
@@ -154,7 +124,7 @@ nav {
     
 
     h1{ 
-        padding-top: 53%;
+        padding-top: 50%;
         font-size:3.813em; 
         span {
             text-align: right;
@@ -164,47 +134,22 @@ nav {
     h2{
         font-size :2.625em;
         span{
-            
             color: #088960;
        }
     }
     
 }
-
-#lineHeart {
-    padding-bottom: 78px;
+// MAIN
+main {
+    float: left;
 }
 
-.heart-border {
-    opacity: 0.2;
-    // margin-bottom: 60px;
-}
-.heart-border:before,
-.heart-border:after {
-    background-color: #B3B3B3;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 90px;
-}
-.heart-border:before {
-    right: 0.5em;
-    margin-left: -50%;
-}
-.heart-border:after {
-    left: 0.5em;
-    margin-right: -50%;
-}
+// SECTIONS
 
+section {
+    float: left;
+    width: 100%;
 
- 
-/*--- content section - put whatever you want here ---*/
-.Feature {
-    background-color: #f4f7f9;
-    content: "";
-    height: 450px;
     header {
         text-align: center;
         h1 {
@@ -216,6 +161,42 @@ nav {
             font-weight: 800;
         }
     }
+    #lineHeart {
+    padding-bottom: 78px;
+    }
+
+    .heart-border {
+        opacity: 0.2;
+        // margin-bottom: 60px;
+    }
+    .heart-border:before,
+    .heart-border:after {
+        background-color: #B3B3B3;
+        
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 90px;
+    }
+    .heart-border:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+    .heart-border:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+
+}
+
+
+
+// SECTION SPECIFICS
+/*--- content section - put whatever you want here ---*/
+#Feature {
+    background-color: #f4f7f9;
+    height: 450px;
 
     article {
         .column(4);
@@ -245,36 +226,17 @@ nav {
             }
 
         }
-        img{
-            
+        img{   
             height: 50%;
-         
-
-        }
-
-
-        
+        }  
     }
 
 }
 
 /*--- content section - put whatever you want here ---*/
-.works {
+#works {
     background-color: lightblue;
-    content: "";
     height: 953px;
-
-    header {
-        text-align: center;
-        h1 {
-            text-align: center;
-            padding:  25px 78px ;
-            font-size: 1.750em;
-            color: #0eb493;
-            text-transform: uppercase;
-            font-weight: 800;
-        }
-    }
 
     p {
         text-align: center;
@@ -292,7 +254,6 @@ nav {
                 font-weight: 700;
                 font-size: 0.875em;
                 color:#062033;
-
             }
             &:hover {
                 background-color: #0eb493;
@@ -300,66 +261,28 @@ nav {
         }
     }
 
-
 }
 /*--- content section - put whatever you want here ---*/
-.team {
+#team {
     background-color: yellow;
-    content: "";
     height: 926px;
-    header {
-        text-align: center;
-        h1 {
-            text-align: center;
-            padding:  25px 78px ;
-            font-size: 1.750em;
-            color: #0eb493;
-            text-transform: uppercase;
-            font-weight: 800;
-        }
-    }
 }
  
 /*--- content section - put whatever you want here ---*/
-.funfacts {
+#funfacts {
     background-color: grey;
-    content: "";
     height: 600px;
-    header {
-        text-align: center;
-        h1 {
-            text-align: center;
-            padding:  25px 78px ;
-            font-size: 1.750em;
-            color: #0eb493;
-            text-transform: uppercase;
-            font-weight: 800;
-        }
-    }   
 }
 
 /*--- content section - put whatever you want here ---*/
-.LetsDiscuss {
-   background-color: pink;
-    content: "";
+#LetsDiscuss {
+    background-color: pink;  
     height: 855px;
-    header {
-        text-align: center;
-        h1 {
-            text-align: center;
-            padding:  25px 78px ;
-            font-size: 1.750em;
-            color: #0eb493;
-            text-transform: uppercase;
-            font-weight: 800;
-        }
-    } 
 }
 
 /*--- footer section - put whatever you want here ---*/
 
 footer {
-   background-color: lightblue;
-    content: "";
+    background-color: lightblue;
     height: 404px;
 }
