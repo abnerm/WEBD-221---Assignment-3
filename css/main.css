@@ -272,13 +272,13 @@ section .heart-border:after {
   background-color: #0eb493;
 }
 #workGallery {
-  height: 600px;
   display: block;
-  margin: 0 auto;
 }
-#workGallery ul {
-  margin: 0;
-  height: 100%;
+#workGallery ul li img {
+  display: inline;
+  float: left;
+  width: 32.098765432098766%;
+  margin: 0 0.6172839506172839%;
 }
 /*--- content section - put whatever you want here ---*/
 #team {
