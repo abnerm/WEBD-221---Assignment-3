@@ -180,6 +180,7 @@ section .heart-border {
 }
 section .heart-border:before,
 section .heart-border:after {
+  content: "";
   background-color: #B3B3B3;
   display: inline-block;
   height: 1px;
