@@ -368,14 +368,61 @@ footer article {
   float: left;
   width: 23.7654321%;
   margin: 0 0.61728395%;
+  margin-top: 100px;
 }
 footer article:first-child div {
   float: none;
 }
+footer article h1 {
+  font-size: 0.875em;
+  color: #fff;
+  margin-top: 30px;
+}
+footer article p {
+  padding: 5px;
+}
+footer article a {
+  font-size: 0.813em;
+  padding: 10px 0;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+footer article h1 + div {
+  display: inline;
+  float: left;
+  width: 48.7654321%;
+  margin: 0 0.61728395%;
+  padding-top: 35px;
+}
+footer article div + div {
+  padding-top: 35px;
+  display: inline;
+  float: left;
+  width: 48.7654321%;
+  margin: 0 0.61728395%;
+}
+footer article #subscribe {
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
 footer article:last-child i {
   color: #000;
 }
+footer article:last-child p {
+  margin: 55px 0;
+  color: #fff;
+  border-left: 1px solid #062033;
+  padding-left: 10px;
+}
+footer article:last-child i + a {
+  display: inline;
+}
+footer article:last-child a {
+  color: #000;
+}
 footer .logo {
+  padding-bottom: 45px;
   float: left;
   content: '';
   width: 103px;

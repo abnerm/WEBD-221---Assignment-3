@@ -385,18 +385,79 @@ footer {
     border-top: 5px solid #062033;
     article {
         .column(3);
+    
+        margin-top: 100px;
+
         &:first-child {
-            div {float: none;}
+            div {
+                float: none;
+            }
 
         }
+
+        h1 {
+            font-size: 0.875em;
+            color: #fff;
+            margin-top: 30px;
+
+        }
+
+        p {
+            padding:5px;
+
+        }
+
+        a{
+            font-size :0.813em;
+            padding: 10px 0;
+            display: block;
+            text-decoration: none;
+            color:#fff;
+        }
+        h1 + div {
+            .column(6);
+            padding-top: 35px;
+            a {
+                
+                
+                
+            }
+        }
+        div + div {
+            padding-top: 35px;
+            .column(6);
+            a {
+                
+            }
+        }
+
+        #subscribe {
+            margin-top: 45px;
+            margin-bottom: 25px;
+        }
+
         &:last-child {
             i {
                 color: #000;
-            }    
+            } 
+
+            p {
+                margin:  55px 0;
+                color:#fff;
+                border-left: 1px solid #062033;
+                padding-left: 10px;
+            }
+            i + a{
+                display: inline;
+            }
+            a {
+                color: #000;
+            }
         }
     }
 
     .logo {
+        padding-bottom: 45px;
         float: left;
         content:'';
         width: 103px;
