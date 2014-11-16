@@ -43,10 +43,12 @@ h3 {
 }
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 /* container - place inside each section or around the entire page depending on your layout */
 .container {
-  max-width: 90%;
+  max-width: 85%;
   margin: 0 auto;
   height: 100%;
 }
@@ -57,14 +59,15 @@ ul {
   width: 40.4320987654321%;
   margin: 0 0.6172839506172839%;
   height: 100%;
+  float: right;
 }
 .nav ul {
   height: 100%;
+  text-align: right;
 }
 .nav ul li {
   height: 100%;
   display: inline-block;
-  float: left;
 }
 .nav ul li:hover {
   border-top: 1px solid #0FCF8C;
@@ -107,7 +110,6 @@ header#header nav .logo {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  margin-left: 13.5%;
   float: left;
   content: '';
   width: 103px;
@@ -161,8 +163,15 @@ section {
   float: left;
   width: 100%;
 }
+section .aboutText {
+  text-align: center;
+  color: #062033;
+  opacity: 0.8;
+  padding: 0px 0 80px 0;
+}
 section header {
   text-align: center;
+  margin-top: 90px;
 }
 section header h1 {
   text-align: center;
@@ -172,11 +181,9 @@ section header h1 {
   text-transform: uppercase;
   font-weight: 800;
 }
-section #lineHeart {
-  padding-bottom: 78px;
-}
 section .heart-border {
   opacity: 0.2;
+  margin-bottom: 20px;
 }
 section .heart-border:before,
 section .heart-border:after {
@@ -245,11 +252,6 @@ section .heart-border:after {
   background-color: lightblue;
   height: 350px;
 }
-#works p {
-  text-align: center;
-  color: #062033;
-  opacity: 0.8;
-}
 #works ul {
   height: 30px;
   display: block;
@@ -284,6 +286,45 @@ section .heart-border:after {
 #team {
   background-color: yellow;
   height: 926px;
+}
+#team .teamList {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#team .teamList li {
+  width: 25%;
+  height: 300px;
+  display: inline;
+}
+#team .teamList li img {
+  width: 270px;
+  height: 300px;
+  margin: 0 auto;
+}
+#team .teamList li h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 10px;
+}
+#team .teamList li p {
+  font-size: 13px;
+  text-align: center;
+  clear: both;
+}
+#team .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#team .pagination li {
+  width: 8px;
+  height: 8px;
+  display: inline;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 /*--- content section - put whatever you want here ---*/
 #funfacts {

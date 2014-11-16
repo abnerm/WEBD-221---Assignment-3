@@ -35,11 +35,13 @@ h3 {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 /* container - place inside each section or around the entire page depending on your layout */
 
 .container {
-    max-width: 90%;
+    max-width: 85%;
     margin: 0 auto;
     height: 100%;
 }
@@ -48,12 +50,14 @@ ul {
 .nav {
     .column(5);
     height: 100%;
+    float: right;
     ul {
         height: 100%;
+        text-align: right;
         li {
             height: 100%;
             display: inline-block;
-            float: left;
+            
             &:hover {
                 border-top: 1px solid #0FCF8C;
                 margin-top: -1px;
@@ -88,7 +92,6 @@ header#header {
         }
         .logo {
             .vertical-align; 
-            margin-left: 13.5%;
             float: left;
             content:'';
             width: 103px;
@@ -149,9 +152,15 @@ main {
 section {
     float: left;
     width: 100%;
-
+    .aboutText {
+        text-align: center;
+        color: #062033;
+        opacity:0.8;
+        padding: 0px 0 80px 0;
+    }
     header {
         text-align: center;
+        margin-top: 90px;
         h1 {
             text-align: center;
             padding:  25px 78px ;
@@ -161,13 +170,10 @@ section {
             font-weight: 800;
         }
     }
-    #lineHeart {
-    padding-bottom: 78px;
-    }
 
     .heart-border {
         opacity: 0.2;
-        // margin-bottom: 60px;
+        margin-bottom: 20px;
     }
     .heart-border:before,
     .heart-border:after {
@@ -237,6 +243,7 @@ section {
 /*--- content section - put whatever you want here ---*/
 #works {
     background-color: lightblue;
+
     height: 350px;
 
     p {
@@ -244,6 +251,9 @@ section {
         color: #062033;
         opacity:0.8;
     }
+
+    height: 953px;
+
     ul {
         height: 30px;
         display: block;
@@ -294,6 +304,48 @@ section {
 #team {
     background-color: yellow;
     height: 926px;
+   
+    .teamList {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            width: 25%;
+            height: 300px;
+            display: inline;
+            .container {
+            }
+            img {
+                width: 270px;
+                height: 300px;
+                margin: 0 auto;
+            }
+            h3 {
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+                padding-top: 10px;
+            }
+            p {
+                font-size: 13px;
+                text-align: center;
+                clear: both;
+            }
+        }
+    }
+    .pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            width: 8px;
+            height: 8px;
+            display: inline;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+    }
 }
  
 /*--- content section - put whatever you want here ---*/
