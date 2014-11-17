@@ -163,6 +163,14 @@ header #slider h2 {
 header #slider h2 span {
   color: #088960;
 }
+header #slider #social li div {
+  width: 20px;
+  height: 16px;
+  background-size: cover;
+}
+header #slider #social li #twitter {
+  background: url(../assets/logo.png) no-repeat center;
+}
 main {
   float: left;
 }
