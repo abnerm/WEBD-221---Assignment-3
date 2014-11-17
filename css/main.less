@@ -14,11 +14,6 @@ Author: Shawn Santiago
 
 /* Global Styles */ 
 
-section {
-    width: 100%;
-    background-color: lightgreen;
-}
-
 body,h1, h2, h3, p {
     font-family: @OpenSans;
     margin: 0;
@@ -160,10 +155,10 @@ section {
     }
     header {
         text-align: center;
-        margin-top: 90px;
+        padding-top: 90px;
         h1 {
             text-align: center;
-            padding:  25px 78px ;
+            padding: 0 78px 20px 78px;
             font-size: 1.750em;
             color: #0eb493;
             text-transform: uppercase;
@@ -265,7 +260,6 @@ section {
 }
 /*--- content section - put whatever you want here ---*/
 #team {
-    background-color: yellow;
     height: 926px;
    
     .teamList {
@@ -275,7 +269,6 @@ section {
         justify-content: center;
         li {
             width: 25%;
-            height: 300px;
             display: inline;
             .container {
             }
@@ -301,20 +294,72 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 70px;
         li {
-            width: 8px;
-            height: 8px;
+            width: 5px;
+            height: 5px;
+            margin: 0 5px;
             display: inline;
             border-radius: 50%;
             border: 1px solid black;
+            cursor: pointer;
+            &:hover {
+                background: black;
+
+            }
         }
+
     }
 }
  
 /*--- content section - put whatever you want here ---*/
 #funfacts {
-    background-color: grey;
     height: 600px;
+    background: url(../assets/city.jpg);
+    color: white;
+    .container {
+        max-width: 100%;
+        margin: 0;
+        background: rgba(6, 32, 51, 0.8);
+    }
+    #facts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+        li {
+            display: inline;
+            margin: 0 5%;
+        }
+        .icons {
+            border: 1px solid white;
+            border-radius: 50%;
+            width: 130px;
+            height: 130px;
+            margin: 0 auto;
+            img {
+                width: 40px;
+                height: 40px;
+                margin: 0 auto;
+                display: block;
+                margin-top: 45px;
+            }
+        }
+        .nums {
+            text-align: center;
+            text-transform: uppercase;
+           
+            h2 {
+                 font-weight: 400;
+                 font-size: 60px;
+            }
+            h3 {
+                font-weight: 300;
+                font-size: 18px;
+            }
+        }
+    }
 }
 
 /*--- content section - put whatever you want here ---*/
