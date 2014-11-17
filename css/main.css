@@ -20,9 +20,9 @@ Author: Shawn Santiago
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* Global Styles */section {
+/* Global Styles */
+section {
   width: 100%;
-  background-color: lightgreen;
 }
 body,
 h1,
@@ -43,10 +43,12 @@ h3 {
 }
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 /* container - place inside each section or around the entire page depending on your layout */
 .container {
-  max-width: 90%;
+  max-width: 85%;
   margin: 0 auto;
   height: 100%;
 }
@@ -54,17 +56,18 @@ ul {
 .nav {
   display: inline;
   float: left;
-  width: 40.4320987654321%;
-  margin: 0 0.6172839506172839%;
+  width: 40.43209877%;
+  margin: 0 0.61728395%;
   height: 100%;
+  float: right;
 }
 .nav ul {
   height: 100%;
+  text-align: right;
 }
 .nav ul li {
   height: 100%;
   display: inline-block;
-  float: left;
 }
 .nav ul li:hover {
   border-top: 1px solid #0FCF8C;
@@ -97,8 +100,8 @@ header#header nav {
 header#header nav .logoContainer {
   display: inline;
   float: left;
-  width: 57.098765432098766%;
-  margin: 0 0.6172839506172839%;
+  width: 57.09876543%;
+  margin: 0 0.61728395%;
   height: 100%;
 }
 header#header nav .logo {
@@ -107,7 +110,6 @@ header#header nav .logo {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  margin-left: 13.5%;
   float: left;
   content: '';
   width: 103px;
@@ -161,8 +163,15 @@ section {
   float: left;
   width: 100%;
 }
+section .aboutText {
+  text-align: center;
+  color: #062033;
+  opacity: 0.8;
+  padding: 0px 0 80px 0;
+}
 section header {
   text-align: center;
+  margin-top: 90px;
 }
 section header h1 {
   text-align: center;
@@ -172,11 +181,9 @@ section header h1 {
   text-transform: uppercase;
   font-weight: 800;
 }
-section #lineHeart {
-  padding-bottom: 78px;
-}
 section .heart-border {
   opacity: 0.2;
+  margin-bottom: 20px;
 }
 section .heart-border:before,
 section .heart-border:after {
@@ -199,27 +206,24 @@ section .heart-border:after {
 /*--- content section - put whatever you want here ---*/
 #Feature {
   background-color: #f4f7f9;
-  height: 450px;
 }
 #Feature article {
   display: inline;
   float: left;
-  width: 32.098765432098766%;
-  margin: 0 0.6172839506172839%;
-  height: 120px;
+  width: 32.09876543%;
+  margin: 0 0.61728395%;
 }
 #Feature article > div {
-  height: 100%;
   display: inline;
   float: left;
-  width: 23.765432098765434%;
-  margin: 0 0.6172839506172839%;
+  width: 23.7654321%;
+  margin: 0 0.61728395%;
 }
 #Feature article div + div {
   display: inline;
   float: left;
-  width: 73.76543209876543%;
-  margin: 0 0.6172839506172839%;
+  width: 73.7654321%;
+  margin: 0 0.61728395%;
   height: 100%;
 }
 #Feature article div + div h1 {
@@ -238,14 +242,31 @@ section .heart-border:after {
   opacity: 0.7;
 }
 #Feature article img {
-  height: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+#Feature .pagination {
+  display: inline;
+  float: left;
+  width: 98.7654321%;
+  margin: 0 0.61728395%;
+  /* display: block;
+        align-items: center;
+        justify-content: center; */
+}
+#Feature .pagination li {
+  width: 8px;
+  height: 8px;
+  display: inline;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 /*--- content section - put whatever you want here ---*/
 #works {
-  background-color: lightblue;
-  height: 350px;
+  background-color: #fff;
 }
-#works p {
+#works .aboutText p {
   text-align: center;
   color: #062033;
   opacity: 0.8;
@@ -254,22 +275,22 @@ section .heart-border:after {
   height: 30px;
   display: block;
   text-align: center;
-  padding-top: 50px;
+  padding-bottom: 40px;
 }
 #works ul li {
   border-radius: 5px;
-  height: 100%;
   display: inline-block;
-}
-#works ul li a {
-  text-decoration: none;
+  text-align: center;
   padding: 11px 18px;
+  text-decoration: none;
   font-weight: 700;
   font-size: 0.875em;
   color: #062033;
+  cursor: pointer;
 }
 #works ul li:hover {
   background-color: #0eb493;
+  color: #fff;
 }
 #workGallery {
   display: block;
@@ -277,13 +298,52 @@ section .heart-border:after {
 #workGallery ul li img {
   display: inline;
   float: left;
-  width: 32.098765432098766%;
-  margin: 0 0.6172839506172839%;
+  width: 32.09876543%;
+  margin: 0 0.61728395%;
 }
 /*--- content section - put whatever you want here ---*/
 #team {
   background-color: yellow;
   height: 926px;
+}
+#team .teamList {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#team .teamList li {
+  width: 25%;
+  height: 300px;
+  display: inline;
+}
+#team .teamList li img {
+  width: 270px;
+  height: 300px;
+  margin: 0 auto;
+}
+#team .teamList li h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 10px;
+}
+#team .teamList li p {
+  font-size: 13px;
+  text-align: center;
+  clear: both;
+}
+#team .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#team .pagination li {
+  width: 8px;
+  height: 8px;
+  display: inline;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 /*--- content section - put whatever you want here ---*/
 #funfacts {
@@ -297,6 +357,75 @@ section .heart-border:after {
 }
 /*--- footer section - put whatever you want here ---*/
 footer {
-  background-color: lightblue;
+  background: rgba(33, 182, 151, 0.8);
   height: 404px;
+  width: 100%;
+  float: left;
+  border-top: 5px solid #062033;
+}
+footer article {
+  display: inline;
+  float: left;
+  width: 23.7654321%;
+  margin: 0 0.61728395%;
+  margin-top: 100px;
+}
+footer article:first-child div {
+  float: none;
+}
+footer article h1 {
+  font-size: 0.875em;
+  color: #fff;
+  margin-top: 30px;
+}
+footer article p {
+  padding: 5px;
+}
+footer article a {
+  font-size: 0.813em;
+  padding: 10px 0;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+footer article h1 + div {
+  display: inline;
+  float: left;
+  width: 48.7654321%;
+  margin: 0 0.61728395%;
+  padding-top: 35px;
+}
+footer article div + div {
+  padding-top: 35px;
+  display: inline;
+  float: left;
+  width: 48.7654321%;
+  margin: 0 0.61728395%;
+}
+footer article #subscribe {
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+footer article:last-child i {
+  color: #000;
+}
+footer article:last-child p {
+  margin: 55px 0;
+  color: #fff;
+  border-left: 1px solid #062033;
+  padding-left: 10px;
+}
+footer article:last-child i + a {
+  display: inline;
+}
+footer article:last-child a {
+  color: #000;
+}
+footer .logo {
+  padding-bottom: 45px;
+  float: left;
+  content: '';
+  width: 103px;
+  height: 41px;
+  background: url(../assets/logo.png) no-repeat center;
 }
